@@ -1,8 +1,8 @@
 const gamepadInfo = document.getElementById("gamepad-info");
 const textbox = document.getElementById("textbox");
 const rAF = window.requestAnimationFrame;
-const left_set = Set();
-const right_set = Set();
+const left_set = new Set();
+const right_set = new Set();
 
 window.addEventListener("gamepadconnected", function () {
     var gp = navigator.getGamepads()[0];
